@@ -16,14 +16,12 @@ const Popularjobs = () => {
     num_pages: '1',
   })
 
-  if(data.lenght === 0){
-      refetch();
-  }
   const router = useRouter();
   
   const [selectedJob, setSelectedJob] = useState();
-  const handleCardPress = (selectedJob) => {
-    router.push(`/job-details/${selectedJob.job_id}`);
+  const handleCardPress = (item) => {
+    router.push(`/job-details/${item.job_id}`);
+    setSelectedJob(item);
     
   }
   //console.log(data);
