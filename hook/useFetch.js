@@ -11,7 +11,7 @@ const useFecth = (endpoint, querry) => {
         method: 'GET',
         url: `https://jsearch.p.rapidapi.com/${endpoint}`,
         headers: {
-            'X-RapidAPI-Key': 'd1024c6d2cmshef1f508e8c06eb9p1dcca0jsn1d4d10b09129',
+            'X-RapidAPI-Key': '',
             'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
         },
         params: { ...querry},
